@@ -14,7 +14,7 @@
  const {response} = require('express')
  
  //Import do arquivo de funções
- const dadosWhatsApp = require('./modulo/fuction.js')
+ const dadosWhatsApp = require('./modulo/function.js')
  //Objeto com as informações da classe express
  const app = express()
  
@@ -28,7 +28,7 @@
  })
 
  app.use('/v1/whatsapp/usuarios', cors(), async function(request, response, next){
-     const usuarios = dadosWhatsApp.getUsuarios()
+     const usuarios = dadosWhatsApp.getDadosDoUsuarios()
      let statusCode = 200
      response.status(statusCode)
      response.json(usuarios)
@@ -43,7 +43,7 @@
         statusCode = 400
         contatos.message = 'Não é possivel processar a requisição, pois o nome informado não atende a requisição.'
     }else{
-        let listaDeContatos = dadosWhatsApp.getContatosUsuarios(nomeDoUsuario)
+        let listaDeContatos = dadosWhatsApp.getUsuarios(nomeDoUsuario)
 
         if(listaDeContatos){
             statusCode = 200
