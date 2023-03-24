@@ -10,7 +10,7 @@ const contatos = { "whats-users" :
                                                   "end"   : "null"
                                                 }
                                               ,
-                              "profile-image": "img/contact1.png",
+                              "profile-image": "img/contact10.png",
                               "number" : "11987876567",
                               "background" : "#fccc5b",
                               "contacts": 
@@ -18,7 +18,7 @@ const contatos = { "whats-users" :
                                           {
                                             "name": "Ana Maria",
                                             "description": "Frontend Developer",
-                                            "image": "img/contact1.png",
+                                            "image": "img/contact10.png",
                                             "messages": [
                                               {
                                                 "sender": "me",
@@ -45,7 +45,7 @@ const contatos = { "whats-users" :
                                           {
                                             "name": "Jane Smith",
                                             "description": "UI Designer",
-                                            "image": "img/contact2.png",
+                                            "image": "img/contact10.png",
                                             "messages": [
                                               {
                                                 "sender": "me",
@@ -72,7 +72,7 @@ const contatos = { "whats-users" :
                                           {
                                             "name": "Mark Johnson",
                                             "description": "Backend Developer",
-                                            "image": "img/contact3.png",
+                                            "image": "img/contact10.png",
                                             "messages": [
                                               {
                                                 "sender": "me",
@@ -99,7 +99,7 @@ const contatos = { "whats-users" :
                                           {
                                           "name": "Sarah Lee",
                                           "description": "Software Engineer",
-                                          "image": "img/contact4.png",
+                                          "image": "img/contact10.png",
                                           "messages": [
                                               {
                                               "sender": "me",
@@ -126,7 +126,7 @@ const contatos = { "whats-users" :
                                           {
                                           "name": "John Doe",
                                           "description": "Designer",
-                                          "image": "img/contact5.png",
+                                          "image": "img/contact10.png",
                                           "messages": [
                                               {
                                               "sender": "John Doe",
@@ -153,7 +153,7 @@ const contatos = { "whats-users" :
                                           {
                                           "name": "Julia Smith",
                                           "description": "Product Manager",
-                                          "image": "img/contact6.png",
+                                          "image": "img/contact10.png",
                                           "messages": [
                                               {
                                               "sender": "Julia Smith",
@@ -180,7 +180,7 @@ const contatos = { "whats-users" :
                                           {
                                           "name": "Max Kellerman",
                                           "description": "Marketing Manager",
-                                          "image": "img/contact7.png",
+                                          "image": "img/contact10.png",
                                           "messages": [
                                               {
                                               "sender": "Max Kellerman",
@@ -211,7 +211,7 @@ const contatos = { "whats-users" :
                                                   "end"   : "null"
                                                 }
                                               ,
-                              "profile-image": "img/contact2.png",
+                              "profile-image": "img/contact10.png",
                               "number" : "11966578996",
                               "background" : "#fccc5b",
                               "contacts": 
@@ -246,7 +246,7 @@ const contatos = { "whats-users" :
                                           {
                                             "name": "John Guttemberg",
                                             "description": "Free",
-                                            "image": "img/contact20.png",
+                                            "image": "img/contact10.png",
                                             "messages": [
                                               {
                                                 "sender": "me",
@@ -273,7 +273,7 @@ const contatos = { "whats-users" :
                                           {
                                             "name": "George Mikael",
                                             "description": "Backend Developer",
-                                            "image": "img/contact30.png",
+                                            "image": "img/contact10.png",
                                             "messages": [
                                               {
                                                 "sender": "me",
@@ -300,7 +300,7 @@ const contatos = { "whats-users" :
                                           {
                                           "name": "Cristian Lee",
                                           "description": "Software Engineer",
-                                          "image": "img/contact4.png",
+                                          "image": "/img/contact10.png",
                                           "messages": [
                                               {
                                               "sender": "me",
@@ -327,7 +327,7 @@ const contatos = { "whats-users" :
                                           {
                                           "name": "Jonny Devited",
                                           "description": "Designer",
-                                          "image": "img/contact5.png",
+                                          "image": "img/contact10.png",
                                           "messages": [
                                               {
                                               "sender": "Jonny Devited",
@@ -354,7 +354,7 @@ const contatos = { "whats-users" :
                                           {
                                           "name": "Shita Ling",
                                           "description": "Product Manager",
-                                          "image": "img/contact6.png",
+                                          "image": "img/contact10.png",
                                           "messages": [
                                               {
                                               "sender": "Shita Ling",
@@ -381,7 +381,7 @@ const contatos = { "whats-users" :
                                           {
                                           "name": "Nilsen Silva",
                                           "description": "Marketing Manager",
-                                          "image": "img/contact7.png",
+                                          "image": "img/contact10.png",
                                           "messages": [
                                               {
                                               "sender": "Nilsen Silva",
@@ -412,7 +412,7 @@ const contatos = { "whats-users" :
                                                   "end"   : "null"
                                                 }
                                               ,
-                              "profile-image": "img/contact200.png",
+                              "profile-image": "img/contact10.png",
                               "number" : "11955577796",
                               "background" : "#cc5bfc",
                               "contacts": 
@@ -420,7 +420,7 @@ const contatos = { "whats-users" :
                                           {
                                           "name": "Peter Wilsen",
                                           "description": "Engineer",
-                                          "image": "img/contact4.png",
+                                          "image": "img/contact10.png",
                                           "messages": [
                                               {
                                               "sender": "me",
@@ -447,7 +447,7 @@ const contatos = { "whats-users" :
                                           {
                                           "name": "Jonny Devited",
                                           "description": "Designer",
-                                          "image": "img/contact5.png",
+                                          "image": "img/contact10.png",
                                           "messages": [
                                               {
                                               "sender": "Jonny Devited",
@@ -474,7 +474,7 @@ const contatos = { "whats-users" :
                                           {
                                           "name": "Franklin Silva",
                                           "description": "Product Manager",
-                                          "image": "img/contact6.png",
+                                          "image": "img/contact10.png",
                                           "messages": [
                                               {
                                               "sender": "Franklin Silva",
@@ -501,7 +501,7 @@ const contatos = { "whats-users" :
                                           {
                                           "name": "Catarina Sousa",
                                           "description": "Marketing Manager",
-                                          "image": "img/contact7.png",
+                                          "image": "img/contact10.png",
                                           "messages": [
                                               {
                                               "sender": "Catarina Sousa",
@@ -532,7 +532,7 @@ const contatos = { "whats-users" :
                                                   "end"   : "null"
                                                 }
                                               ,
-                              "profile-image": "img/contact230.png",
+                              "profile-image": "img/contact10.png",
                               "number" : "1194457796",
                               "background" : "#c00bfc",
                               "contacts": 
@@ -540,7 +540,7 @@ const contatos = { "whats-users" :
                                           {
                                           "name": "Wally Gator",
                                           "description": "Free",
-                                          "image": "img/contact4.png",
+                                          "image": "img/contact10.png",
                                           "messages": [
                                               {
                                               "sender": "me",
@@ -568,3 +568,5 @@ const contatos = { "whats-users" :
                             }
                           ]
                         }
+
+                        module.exports = {contatos}

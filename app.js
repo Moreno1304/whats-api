@@ -8,59 +8,67 @@
 
  //  Import das dependencias para criar a API 
 
- const express = require('express')
- const cors = require('cors')
- const bodyparser = require('body-parser')
- const {response} = require('express')
- 
- //Import do arquivo de funções
- const dadosWhatsApp = require('./modulo/function.js')
- //Objeto com as informações da classe express
- const app = express()
- 
- app.use((request,response,next) =>{
- 
-     response.header('Access-Control-Allow-Origin', '*')
-     response.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
- 
-     app.use(cors())
-     next()
- })
+// Responsavel pelas requisições
+const express = require('express')
 
- app.use('/v1/whatsapp/usuarios', cors(), async function(request, response, next){
-     const usuarios = dadosWhatsApp.getDadosDoUsuarios()
-     let statusCode = 200
-     response.status(statusCode)
-     response.json(usuarios)
- })
+// Responsavel pelas permissões das requisições
+const cors = require('cors')
 
- app.use('/v1/whatsapp/contatos', cors(), async function(request, response, next){
-    let nomeDoUsuario = request.query.nameUser
-    let statusCode
-    let contatos = {}
+// Responsavel pela manipulação do body da requisição
+const bodyParser = require('body-parser')
 
-    if(nomeDoUsuario == '' || nomeDoUsuario == undefined || !isNaN(nomeDoUsuario)){
+// Import do arquivo de funções para manipular os contatos
+const funcoes = require('./modulo/funcoes.js')
+
+// Cria um objeto com as informações da classe express 
+const app = express()
+
+// Define as permissões no header da API
+app.use((request, response, next) => {
+    // Permite gerenciar a origem das requisições da API
+    // * - Significa que a API será publica 
+    // IP - Se colocar o IP, a API somente responderá para aquela máquina 
+    response.header('Access-Control-Allow-Origin', '*')
+
+    // Permite gerenciar quais verbos (metodos) poderão fazer requisições 
+    response.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
+
+    // Ativa no cors das requisições as permissões estabelecidas
+    app.use(cors())
+
+    next()
+})
+
+// endPoints
+let statusCode
+let dadosConta = {}
+
+// endPoint
+app.get('/v1/senai/conta', cors(), async function (request, response, next) {
+
+    let numeroConta = request.query.number
+    // let cep = request.query.cep
+
+    if (numeroConta == '' || numeroConta == undefined || isNaN(numeroConta)) {
         statusCode = 400
-        contatos.message = 'Não é possivel processar a requisição, pois o nome informado não atende a requisição.'
-    }else{
-        let listaDeContatos = dadosWhatsApp.getUsuarios(nomeDoUsuario)
+         dadosConta.message = "Não é possivel processar a requisição pois o número está incorreto"
+    } else {
+        let conta = funcoes.getConta(numeroConta)
 
-        if(listaDeContatos){
+        if (conta) {
             statusCode = 200
-            contatos = listaDeContatos
-        }else{
-            statusCode = 404
-            contatos.message = 'Usúario não encontrado.'
+            dadosConta = conta
+        } else {
+            statusCode = 400
         }
     }
     response.status(statusCode)
-    response.json(contatos)
- })
+    response.json(dadosConta )
 
- //Carregar os endPoints e aguarda a sua requisição
- //Protocolo HTTP 8080
+})
 
- app.listen(8080, function(){
-     console.log('Servidor rodando na porta 8080')
-     
- })
+//  Permite carregar os endpoint criados e aguadar as requisições
+//pelo protocolo HTTP na porta 8080
+app.listen(8080, function () {
+    console.log('Servidor aguardando requisições na porta 8080');
+})
